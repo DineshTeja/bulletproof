@@ -1,4 +1,4 @@
-# LLM Reasoning Enhancement via Reinforcement Learning
+# Bulletproof: LLM Reasoning Enhancement via Reinforcement Learning
 
 This repository explores how reinforcement learning techniques can enhance reasoning capabilities in base language models through structured reasoning tokens. We investigate applying Proximal Policy Optimization (PPO) to train non-reasoning language models to use explicit reasoning steps (`<think>`, `<verify>`, `<conclude>`) when approaching complex problems from the Humanity's Last Exam (HLE) benchmark. Our approach aims to improve logical consistency, reduce hallucinations, and increase accuracy on reasoning-intensive tasks by incentivizing step-by-step problem-solving through carefully designed reward functions.
 
