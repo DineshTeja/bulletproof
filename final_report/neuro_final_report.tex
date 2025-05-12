@@ -1,0 +1,147 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2024
+
+
+% ready for submission
+\usepackage[preprint]{neurips_2024}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2024}
+
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2024}
+
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2024}
+
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\usepackage{indentfirst}
+
+
+\title{Bulletproof: LLM Reasoning Enhancement via Classical Reinforcement Learning}
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\author{%
+  Dinesh Vasireddy \\
+  % \thanks{} \\
+  Computer Science\\
+  Harvard University\\
+  % Cambridge, MA 02138 \\
+  \texttt{dineshvasireddy@college.harvard.edu} \\
+}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\begin{abstract}
+Recent advances in large language models (LLMs) have yielded impressive generative capabilities, yet robust multi-step reasoning remains a fundamental challenge, especially on benchmarks such as Humanity’s Last Exam (HLE). We present Bulletproof, a reinforcement learning (RL) framework that enhances the reasoning abilities of open-source LLMs by simulating structured reasoning tokens—such as <think>, <verify>, and <conclude>—using Proximal Policy Optimization (PPO). Our approach rewards models for logical consistency, stepwise correctness, and factual accuracy, while penalizing hallucinations and unsupported claims, among other factors, all without requiring large-scale human-annotated datasets. We evaluate Bulletproof on a diverse subset of HLE, demonstrating that RL-based reasoning token simulation yields measurable improvements in logical coherence and answer accuracy over baseline models, with up to 0.8\% absolute accuracy gain and a 0.05 increase in composite reward. Our analysis reveals that while structured reasoning enforcement is promising, further optimization of reward functions and hallucination penalties is necessary to achieve substantial gains. These results suggest that classical RL can bridge the gap between pattern-matching and genuine reasoning in LLMs, providing a scalable path toward more reliable and interpretable AI systems.
+\end{abstract}
+
+\section{Introduction}
+
+The pursuit of robust reasoning in artificial intelligence has long been a central challenge, with implications spanning mathematics, science, law, and beyond. While numerous flagship large language models (LLMs) such as GPT-4o and Claude 3.5-Sonnet have achieved remarkable fluency and versatility, their ability to perform complex, most of their multi-step reasoning has remained limited since their inception. This shortfall is especially apparent on rigorous benchmarks like Humanity’s Last Exam (HLE), which are designed to probe not just surface-level pattern recognition, but genuine logical inference and structured problem-solving \citep{phan2025, chollet2024}.
+
+However, a new class of “reasoning” models—such as OpenAI’s o1 and o3 series, and DeepSeek-R1—has emerged within the past year, aiming to address these limitations by explicitly targeting logical consistency and stepwise problem-solving. While these models have demonstrated some improvements, their performance on HLE and similar benchmarks still lags far behind human-level reasoning, with even the best models rarely exceeding 15\% accuracy \citep{liang2025, phan2025}. This persistent gap highlights the need for new approaches that go beyond surface-level fluency and pattern matching.
+
+Traditional strategies for improving LLM reasoning, such as Chain-of-Thought (CoT) prompting and supervised fine-tuning on annotated reasoning traces, have shown some promise but are fundamentally limited. Prompting methods do not alter the model’s internal reasoning process, and supervised fine-tuning requires large, high-quality datasets that are expensive to construct and often fail to generalize across domains \citep{liu2024, shumailov2024}. As a result, there is growing interest in reinforcement learning (RL) as a scalable alternative for enhancing reasoning in LLMs. RL enables models to learn from structured feedback, optimizing for properties such as logical coherence, factual accuracy, and self-correction through reward signals \citep{liang2025, sarukkai2025}.
+
+Yet, the application of RL to LLM reasoning is far from straightforward. Key questions remain: How should reward functions be designed to encourage not just format compliance, but genuine logical progress? Can RL-based methods reduce hallucinations and unsupported claims, or do they risk introducing new pathologies? And, crucially, can these methods bridge the gap between the pattern-matching tendencies of current models and the robust, stepwise reasoning required for tasks like those in HLE?
+
+\textbf{In this work, we explicitly address the following research question:}
+\begin{quote}
+\textit{How can simple reinforcement learning be used to simulate robust reasoning tokens in base open-source language models (Phi-2, GPT-2, TinyLlama, etc.) to improve their performance on complex reasoning tasks, such as those in Humanity’s Last Exam (HLE)?}
+\end{quote}
+
+Our central hypothesis is that by rewarding models for logical consistency, stepwise correctness, and factual accuracy—while penalizing hallucinations and unsupported claims—reinforcement learning can move LLMs beyond superficial format compliance and foster genuine advances in reasoning ability. To test this, we introduce Bulletproof, a lightweight reinforcement learning framework that simulates structured reasoning tokens in open-source LLMs using Proximal Policy Optimization (PPO), and systematically evaluate its impact on HLE performance.
+
+By rigorously analyzing the effects of RL-based reasoning token simulation, we aim to shed light on both the potential and the limitations of this approach, and to provide practical insights for the design of more reliable and interpretable AI systems.
+
+\section{Related Works}
+
+\section{Methodology}
+
+\section{Results}
+
+\section{Discussion}
+
+
+\section*{References}
+\small
+\renewcommand{\refname}{}
+\vspace{-2em}
+\begin{thebibliography}{9}
+\bibitem{chollet2024}
+Chollet, Francois, et al. ``Arc prize 2024: Technical report.'' \textit{arXiv preprint arXiv:2412.04604} (2024).
+
+\bibitem{liang2025}
+Liang, Wenfeng, et al. ``DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning.'' \textit{arXiv preprint arXiv:2501.12948} (2025).
+
+\bibitem{liu2024}
+Liu, Yinhong, et al. ``Measuring, Evaluating and Improving Logical Consistency in Large Language Models.'' \textit{Findings of the Association for Computational Linguistics: ACL 2024}, pp. 12447--12472.
+
+\bibitem{phan2025}
+Phan, Long, et al. ``Humanity's Last Exam.'' \textit{arXiv preprint arXiv:2412.10400} (2025).
+
+\bibitem{rita2024}
+Rita, Mathieu, et al. ``Countering Reward Over-Optimization in LLM with Demonstration-Guided Reinforcement Learning.'' \textit{Findings of ACL 2024}, pp. 12447--12472.
+
+\bibitem{sarukkai2025}
+Sarukkai, Vishnu, et al. ``Automated Rewards via LLM-Generated Progress Functions.'' \textit{Proceedings of ICLR 2025} (2025).
+
+\bibitem{shumailov2024}
+Shumailov, Ilia, et al. ``AI Models Collapse When Trained on Recursively Generated Data.'' \textit{Nature}, vol. 61586-024-07566-y, 2024.
+\end{thebibliography}
+% [1] Alexander, J.A.\ \& Mozer, M.C.\ (1995) Template-based algorithms for
+% connectionist rule extraction. In G.\ Tesauro, D.S.\ Touretzky and T.K.\ Leen
+% (eds.), {\it Advances in Neural Information Processing Systems 7},
+% pp.\ 609--616. Cambridge, MA: MIT Press.
+
+
+% [2] Bower, J.M.\ \& Beeman, D.\ (1995) {\it The Book of GENESIS: Exploring
+%   Realistic Neural Models with the GEneral NEural SImulation System.}  New York:
+% TELOS/Springer--Verlag.
+
+
+% [3] Hasselmo, M.E., Schnell, E.\ \& Barkai, E.\ (1995) Dynamics of learning and
+% recall at excitatory recurrent synapses and cholinergic modulation in rat
+% hippocampal region CA3. {\it Journal of Neuroscience} {\bf 15}(7):5249-5262.
+% }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+
+\section{Appendix}
+
+\end{document}
