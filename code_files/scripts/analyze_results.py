@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional
 
 # Add the src directory to the path so we can import the package
-src_dir = Path(__file__).resolve().parent.parent / "src"
+src_dir = Path(__file__).resolve().parent.parent / "code_files"
 sys.path.append(str(src_dir))
 
 import pandas as pd

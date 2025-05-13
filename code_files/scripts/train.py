@@ -11,7 +11,7 @@ import argparse
 from pathlib import Path
 
 # Add the src directory to the path so we can import the package
-src_dir = Path(__file__).resolve().parent.parent / "src"
+src_dir = Path(__file__).resolve().parent.parent / "code_files"
 sys.path.append(str(src_dir))
 
 from neuro240.utils.config import (
