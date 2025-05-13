@@ -5,4 +5,31 @@ __pycache__/
 *.pyo
 *.pyd
 *.ipynb_checkpoints/
-.DS_Store 
+.DS_Store
+
+# Virtual environment
+env/
+venv/
+
+# Build and distribution files
+*.egg-info/
+dist/
+build/
+neuro240.egg-info/
+
+# Project specific
+outputs/
+data/hle/
+
+# IDE files
+.vscode/
+.idea/
+
+# Log files
+*.log
+evaluation.log
+training.log
+
+# Temporary files
+*.bak
+*.swp
