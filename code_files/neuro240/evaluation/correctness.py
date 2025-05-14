@@ -16,8 +16,7 @@ def evaluate_answer_correctness(
     extracted_answer: str,
     correct_answer: str,
     answer_type: str,
-    question: str,
-    use_llm: bool = True
+    question: str
 ) -> float:
     """Evaluate answer correctness using an LLM-based approach with nuanced scoring.
     
@@ -26,7 +25,6 @@ def evaluate_answer_correctness(
         correct_answer: Reference correct answer
         answer_type: Type of answer ("exactMatch", "multipleChoice", etc.)
         question: Original question
-        use_llm: Whether to use an LLM for evaluation (requires API key)
         
     Returns:
         Correctness score (0-1)
@@ -38,11 +36,7 @@ def evaluate_answer_correctness(
     if answer_type == "multipleChoice" and extracted_answer.upper().strip() == correct_answer.upper().strip():
         return 1.0
         
-    # If we don't want to use LLM or don't have API key, use embedding similarity
-    if not use_llm or not OPENAI_API_KEY:
-        return compute_embedding_similarity(extracted_answer, correct_answer) * 0.7
-
-    # Use LLM-based evaluation
+    # Always use LLM-based evaluation
     try:
         return evaluate_with_llm(extracted_answer, correct_answer, answer_type, question)
     except Exception as e:

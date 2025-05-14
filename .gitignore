@@ -20,6 +20,7 @@ neuro240.egg-info/
 # Project specific
 outputs/
 data/hle/
+code_files/scripts/*_demo.py
 
 # IDE files
 .vscode/

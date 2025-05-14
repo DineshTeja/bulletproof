@@ -37,10 +37,6 @@ class ModelEvaluationResult:
     num_skipped: int
     total_questions: int
     
-    # Correctness
-    correct_answers: int  # Number of correct answers (with threshold >= 0.7)
-    binary_accuracy: float  # correct_answers / num_processed
-    
     # Time
     evaluation_time: float  # seconds
     
@@ -56,8 +52,6 @@ class ModelEvaluationResult:
             "num_processed": self.num_processed,
             "num_skipped": self.num_skipped,
             "total_questions": self.total_questions,
-            "correct_answers": self.correct_answers,
-            "binary_accuracy": self.binary_accuracy,
             "evaluation_time": self.evaluation_time,
         }
 
@@ -207,8 +201,6 @@ def evaluate_model(
             num_processed=0,
             num_skipped=skipped_questions,
             total_questions=total_questions,
-            correct_answers=0,
-            binary_accuracy=0.0,
             evaluation_time=time.time() - start_time,
         )
     
@@ -218,11 +210,6 @@ def evaluate_model(
     avg_stepwise_correctness = sum(stepwise_correctness_scores) / processed_questions
     avg_hallucination = sum(hallucination_scores) / processed_questions
     avg_answer_correctness = sum(answer_correctness_scores) / processed_questions
-    
-    # Calculate binary accuracy (answers above threshold)
-    threshold = 0.7
-    correct_answers = sum(1 for score in answer_correctness_scores if score >= threshold)
-    binary_accuracy = correct_answers / processed_questions
     
     # End timing
     evaluation_time = time.time() - start_time
@@ -238,8 +225,6 @@ def evaluate_model(
         num_processed=processed_questions,
         num_skipped=skipped_questions,
         total_questions=total_questions,
-        correct_answers=correct_answers,
-        binary_accuracy=binary_accuracy,
         evaluation_time=evaluation_time,
     )
     
@@ -251,7 +236,6 @@ def evaluate_model(
     logger.info(f"Average stepwise correctness: {avg_stepwise_correctness:.4f}")
     logger.info(f"Average hallucination penalty: {avg_hallucination:.4f}")
     logger.info(f"Average answer correctness: {avg_answer_correctness:.4f}")
-    logger.info(f"Binary accuracy @ {threshold}: {correct_answers}/{processed_questions} ({binary_accuracy:.4f})")
     
     return result
 
@@ -276,7 +260,6 @@ def create_comparison_dataframe(
         "hallucination_penalty",
         "answer_correctness",
         "overall_reward",
-        "binary_accuracy",
     ]
     
     rows = []

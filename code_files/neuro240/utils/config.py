@@ -47,7 +47,6 @@ LIGHTWEIGHT_MODELS = {
     "flan_t5_small": "google/flan-t5-small",
     "gpt2": "gpt2",
     "opt": "facebook/opt-1.3b",
-    "pythia": "EleutherAI/pythia-1.4b",
 }
 
 # Default model
