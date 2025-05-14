@@ -20,6 +20,11 @@ Models are trained and evaluated on the HLE dataset, focusing on:
 
 ```
 neuro_240_project/
+├── checkpoints/                # Model checkpoints and Colab code
+│   ├── checkpoint_3/
+│   ├── checkpoint_4/
+│   └── colab_code/
+|
 ├── code_files/                 # Main implementation code
 │   ├── neuro240/               # Core package
 │   │   ├── models/             # Model definitions and setup
@@ -29,8 +34,8 @@ neuro_240_project/
 │   ├── scripts/                # Executable scripts
 │   ├── data/                   # Dataset storage (HLE dataset)
 │   ├── outputs/                # Generated artifacts
-│   │   ├── models/             # Saved fine-tuned models
-│   │   ├── results/            # Evaluation results
+│   │   ├── models/             # Saved fine-tuned models (not included in repo for space constraints)
+│   │   ├── results/            # Evaluation results and metrics
 │   │   └── plots/              # Generated visualizations
 │   ├── setup.py                # Package installation configuration
 │   ├── requirements.txt        # Dependencies
@@ -38,8 +43,6 @@ neuro_240_project/
 │
 ├── final_report/               # Academic paper and presentation materials
 │   └── neuro_final_report.tex  # LaTeX source for the paper
-│
-└── model_performance.csv       # Performance metrics of evaluated models
 ```
 
 ## Installation
@@ -116,7 +119,15 @@ The PPO implementation includes:
 
 ## Results
 
-Our evaluations demonstrate that RL-based reasoning token simulation yields measurable improvements in logical coherence and answer accuracy over baseline models. Detailed results are available in the `model_performance.csv` file and in the full paper in the `final_report` directory.
+Our evaluations demonstrate that RL-based reasoning token simulation yields measurable improvements in logical coherence and answer accuracy over baseline models. Detailed results are available in the `outputs/results` directory, which contains evaluation outputs and metrics for all models. For comprehensive analysis and discussion, please refer to the full paper in the `final_report` directory.
+
+## Additional Resources
+
+If you would like to see example outputs, smaller model runs, and evaluation checkpoints from earlier stages of the project, you can view the old checkpoint code and sample outputs in this Google Colab:
+
+[Old Checkpoint Code & Sample Outputs (Google Colab)](https://colab.research.google.com/drive/1LIoSQXtDa88gpmbOgD5P_8BAyttbXdTR?usp=sharing)
+
+*Note: Model run traces and training checkpoints are not included in this repository for space and manageability reasons. The Colab contains illustrative runs and outputs for reference, but on a smaller set of HLE and models.*
 
 ## License
 
