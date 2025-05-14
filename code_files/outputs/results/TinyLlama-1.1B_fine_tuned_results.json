@@ -1,0 +1,12 @@
+{
+    "model_name": "TinyLlama-1.1B_fine_tuned",
+    "overall_reward": 0.467591,
+    "logical_consistency": 0.382401,
+    "stepwise_correctness": 0.324101,
+    "hallucination_penalty": 0.158401,
+    "answer_correctness": 0.262701,
+    "num_processed": 350,
+    "num_skipped": 25,
+    "total_questions": 375,
+    "evaluation_time": 305.2
+}

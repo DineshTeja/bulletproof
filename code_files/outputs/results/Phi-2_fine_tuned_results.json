@@ -1,0 +1,12 @@
+{
+    "model_name": "Phi-2_fine_tuned",
+    "overall_reward": 0.692301,
+    "logical_consistency": 0.538301,
+    "stepwise_correctness": 0.482801,
+    "hallucination_penalty": 0.122401,
+    "answer_correctness": 0.428301,
+    "num_processed": 358,
+    "num_skipped": 17,
+    "total_questions": 375,
+    "evaluation_time": 328.1
+}

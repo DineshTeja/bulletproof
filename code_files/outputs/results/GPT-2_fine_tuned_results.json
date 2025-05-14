@@ -1,0 +1,12 @@
+{
+    "model_name": "GPT-2_fine_tuned",
+    "overall_reward": 0.342215,
+    "logical_consistency": 0.283921,
+    "stepwise_correctness": 0.222389,
+    "hallucination_penalty": 0.231502,
+    "answer_correctness": 0.182991,
+    "num_processed": 340,
+    "num_skipped": 35,
+    "total_questions": 375,
+    "evaluation_time": 298.7
+}

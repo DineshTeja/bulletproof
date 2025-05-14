@@ -1,0 +1,12 @@
+{
+    "model_name": "GPT-2_baseline",
+    "overall_reward": 0.312104,
+    "logical_consistency": 0.263982,
+    "stepwise_correctness": 0.192104,
+    "hallucination_penalty": 0.251501,
+    "answer_correctness": 0.162789,
+    "num_processed": 338,
+    "num_skipped": 37,
+    "total_questions": 375,
+    "evaluation_time": 312.4
+}

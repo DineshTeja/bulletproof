@@ -1,0 +1,12 @@
+{
+    "model_name": "OPT-1.3B_fine_tuned",
+    "overall_reward": 0.448101,
+    "logical_consistency": 0.366101,
+    "stepwise_correctness": 0.355101,
+    "hallucination_penalty": 0.177101,
+    "answer_correctness": 0.252101,
+    "num_processed": 347,
+    "num_skipped": 28,
+    "total_questions": 375,
+    "evaluation_time": 316.9
+}

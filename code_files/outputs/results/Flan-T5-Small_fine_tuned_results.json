@@ -1,0 +1,12 @@
+{
+    "model_name": "Flan-T5-Small_fine_tuned",
+    "overall_reward": 0.371045,
+    "logical_consistency": 0.318104,
+    "stepwise_correctness": 0.261991,
+    "hallucination_penalty": 0.238781,
+    "answer_correctness": 0.218801,
+    "num_processed": 344,
+    "num_skipped": 31,
+    "total_questions": 375,
+    "evaluation_time": 301.8
+}

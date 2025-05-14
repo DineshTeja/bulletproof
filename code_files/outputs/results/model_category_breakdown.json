@@ -1,0 +1,626 @@
+{
+    "Flan-T5-Small": {
+        "baseline": {
+            "Mathematics": {
+                "logical_consistency": 0.28,
+                "stepwise_correctness": 0.22,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.19,
+                "overall_reward": 0.32
+            },
+            "Physics": {
+                "logical_consistency": 0.27,
+                "stepwise_correctness": 0.21,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.18,
+                "overall_reward": 0.31
+            },
+            "Computer Science": {
+                "logical_consistency": 0.29,
+                "stepwise_correctness": 0.23,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.20,
+                "overall_reward": 0.33
+            },
+            "Chemistry": {
+                "logical_consistency": 0.27,
+                "stepwise_correctness": 0.21,
+                "hallucination_penalty": 0.24,
+                "answer_correctness": 0.18,
+                "overall_reward": 0.31
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.29,
+                "stepwise_correctness": 0.23,
+                "hallucination_penalty": 0.21,
+                "answer_correctness": 0.20,
+                "overall_reward": 0.33
+            },
+            "Trivia": {
+                "logical_consistency": 0.26,
+                "stepwise_correctness": 0.20,
+                "hallucination_penalty": 0.25,
+                "answer_correctness": 0.17,
+                "overall_reward": 0.30
+            },
+            "Other": {
+                "logical_consistency": 0.28,
+                "stepwise_correctness": 0.22,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.19,
+                "overall_reward": 0.32
+            }
+        },
+        "fine_tuned": {
+            "Mathematics": {
+                "logical_consistency": 0.32,
+                "stepwise_correctness": 0.26,
+                "hallucination_penalty": 0.24,
+                "answer_correctness": 0.22,
+                "overall_reward": 0.37
+            },
+            "Physics": {
+                "logical_consistency": 0.31,
+                "stepwise_correctness": 0.25,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.21,
+                "overall_reward": 0.36
+            },
+            "Computer Science": {
+                "logical_consistency": 0.33,
+                "stepwise_correctness": 0.27,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.23,
+                "overall_reward": 0.38
+            },
+            "Chemistry": {
+                "logical_consistency": 0.30,
+                "stepwise_correctness": 0.24,
+                "hallucination_penalty": 0.25,
+                "answer_correctness": 0.20,
+                "overall_reward": 0.35
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.33,
+                "stepwise_correctness": 0.28,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.23,
+                "overall_reward": 0.38
+            },
+            "Trivia": {
+                "logical_consistency": 0.29,
+                "stepwise_correctness": 0.23,
+                "hallucination_penalty": 0.26,
+                "answer_correctness": 0.19,
+                "overall_reward": 0.34
+            },
+            "Other": {
+                "logical_consistency": 0.32,
+                "stepwise_correctness": 0.26,
+                "hallucination_penalty": 0.24,
+                "answer_correctness": 0.22,
+                "overall_reward": 0.37
+            }
+        }
+    },
+    "GPT-2": {
+        "baseline": {
+            "Mathematics": {
+                "logical_consistency": 0.26,
+                "stepwise_correctness": 0.19,
+                "hallucination_penalty": 0.25,
+                "answer_correctness": 0.16,
+                "overall_reward": 0.31
+            },
+            "Physics": {
+                "logical_consistency": 0.25,
+                "stepwise_correctness": 0.18,
+                "hallucination_penalty": 0.26,
+                "answer_correctness": 0.15,
+                "overall_reward": 0.30
+            },
+            "Computer Science": {
+                "logical_consistency": 0.27,
+                "stepwise_correctness": 0.20,
+                "hallucination_penalty": 0.24,
+                "answer_correctness": 0.17,
+                "overall_reward": 0.32
+            },
+            "Chemistry": {
+                "logical_consistency": 0.24,
+                "stepwise_correctness": 0.17,
+                "hallucination_penalty": 0.27,
+                "answer_correctness": 0.14,
+                "overall_reward": 0.29
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.27,
+                "stepwise_correctness": 0.20,
+                "hallucination_penalty": 0.24,
+                "answer_correctness": 0.17,
+                "overall_reward": 0.32
+            },
+            "Trivia": {
+                "logical_consistency": 0.23,
+                "stepwise_correctness": 0.16,
+                "hallucination_penalty": 0.28,
+                "answer_correctness": 0.13,
+                "overall_reward": 0.28
+            },
+            "Other": {
+                "logical_consistency": 0.26,
+                "stepwise_correctness": 0.19,
+                "hallucination_penalty": 0.25,
+                "answer_correctness": 0.16,
+                "overall_reward": 0.31
+            }
+        },
+        "fine_tuned": {
+            "Mathematics": {
+                "logical_consistency": 0.28,
+                "stepwise_correctness": 0.22,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.18,
+                "overall_reward": 0.34
+            },
+            "Physics": {
+                "logical_consistency": 0.27,
+                "stepwise_correctness": 0.21,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.17,
+                "overall_reward": 0.33
+            },
+            "Computer Science": {
+                "logical_consistency": 0.29,
+                "stepwise_correctness": 0.23,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.20,
+                "overall_reward": 0.36
+            },
+            "Chemistry": {
+                "logical_consistency": 0.26,
+                "stepwise_correctness": 0.19,
+                "hallucination_penalty": 0.25,
+                "answer_correctness": 0.15,
+                "overall_reward": 0.32
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.29,
+                "stepwise_correctness": 0.23,
+                "hallucination_penalty": 0.21,
+                "answer_correctness": 0.20,
+                "overall_reward": 0.36
+            },
+            "Trivia": {
+                "logical_consistency": 0.25,
+                "stepwise_correctness": 0.18,
+                "hallucination_penalty": 0.26,
+                "answer_correctness": 0.14,
+                "overall_reward": 0.31
+            },
+            "Other": {
+                "logical_consistency": 0.28,
+                "stepwise_correctness": 0.22,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.18,
+                "overall_reward": 0.34
+            }
+        }
+    },
+    "TinyLlama-1.1B": {
+        "baseline": {
+            "Mathematics": {
+                "logical_consistency": 0.32,
+                "stepwise_correctness": 0.25,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.22,
+                "overall_reward": 0.39
+            },
+            "Physics": {
+                "logical_consistency": 0.31,
+                "stepwise_correctness": 0.24,
+                "hallucination_penalty": 0.21,
+                "answer_correctness": 0.21,
+                "overall_reward": 0.38
+            },
+            "Computer Science": {
+                "logical_consistency": 0.33,
+                "stepwise_correctness": 0.26,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.23,
+                "overall_reward": 0.40
+            },
+            "Chemistry": {
+                "logical_consistency": 0.30,
+                "stepwise_correctness": 0.23,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.20,
+                "overall_reward": 0.37
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.33,
+                "stepwise_correctness": 0.26,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.23,
+                "overall_reward": 0.40
+            },
+            "Trivia": {
+                "logical_consistency": 0.29,
+                "stepwise_correctness": 0.22,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.19,
+                "overall_reward": 0.36
+            },
+            "Other": {
+                "logical_consistency": 0.32,
+                "stepwise_correctness": 0.25,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.22,
+                "overall_reward": 0.39
+            }
+        },
+        "fine_tuned": {
+            "Mathematics": {
+                "logical_consistency": 0.39,
+                "stepwise_correctness": 0.33,
+                "hallucination_penalty": 0.16,
+                "answer_correctness": 0.27,
+                "overall_reward": 0.47
+            },
+            "Physics": {
+                "logical_consistency": 0.38,
+                "stepwise_correctness": 0.32,
+                "hallucination_penalty": 0.17,
+                "answer_correctness": 0.26,
+                "overall_reward": 0.46
+            },
+            "Computer Science": {
+                "logical_consistency": 0.40,
+                "stepwise_correctness": 0.34,
+                "hallucination_penalty": 0.15,
+                "answer_correctness": 0.28,
+                "overall_reward": 0.48
+            },
+            "Chemistry": {
+                "logical_consistency": 0.37,
+                "stepwise_correctness": 0.31,
+                "hallucination_penalty": 0.18,
+                "answer_correctness": 0.25,
+                "overall_reward": 0.45
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.40,
+                "stepwise_correctness": 0.34,
+                "hallucination_penalty": 0.15,
+                "answer_correctness": 0.28,
+                "overall_reward": 0.48
+            },
+            "Trivia": {
+                "logical_consistency": 0.36,
+                "stepwise_correctness": 0.30,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.24,
+                "overall_reward": 0.44
+            },
+            "Other": {
+                "logical_consistency": 0.39,
+                "stepwise_correctness": 0.33,
+                "hallucination_penalty": 0.16,
+                "answer_correctness": 0.27,
+                "overall_reward": 0.47
+            }
+        }
+    },
+    "Phi-2": {
+        "baseline": {
+            "Mathematics": {
+                "logical_consistency": 0.48,
+                "stepwise_correctness": 0.40,
+                "hallucination_penalty": 0.15,
+                "answer_correctness": 0.35,
+                "overall_reward": 0.62
+            },
+            "Physics": {
+                "logical_consistency": 0.47,
+                "stepwise_correctness": 0.39,
+                "hallucination_penalty": 0.16,
+                "answer_correctness": 0.34,
+                "overall_reward": 0.61
+            },
+            "Computer Science": {
+                "logical_consistency": 0.49,
+                "stepwise_correctness": 0.41,
+                "hallucination_penalty": 0.14,
+                "answer_correctness": 0.36,
+                "overall_reward": 0.63
+            },
+            "Chemistry": {
+                "logical_consistency": 0.46,
+                "stepwise_correctness": 0.38,
+                "hallucination_penalty": 0.17,
+                "answer_correctness": 0.33,
+                "overall_reward": 0.60
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.49,
+                "stepwise_correctness": 0.41,
+                "hallucination_penalty": 0.14,
+                "answer_correctness": 0.36,
+                "overall_reward": 0.63
+            },
+            "Trivia": {
+                "logical_consistency": 0.45,
+                "stepwise_correctness": 0.37,
+                "hallucination_penalty": 0.18,
+                "answer_correctness": 0.32,
+                "overall_reward": 0.59
+            },
+            "Other": {
+                "logical_consistency": 0.48,
+                "stepwise_correctness": 0.40,
+                "hallucination_penalty": 0.15,
+                "answer_correctness": 0.35,
+                "overall_reward": 0.62
+            }
+        },
+        "fine_tuned": {
+            "Mathematics": {
+                "logical_consistency": 0.54,
+                "stepwise_correctness": 0.48,
+                "hallucination_penalty": 0.12,
+                "answer_correctness": 0.43,
+                "overall_reward": 0.69
+            },
+            "Physics": {
+                "logical_consistency": 0.53,
+                "stepwise_correctness": 0.47,
+                "hallucination_penalty": 0.13,
+                "answer_correctness": 0.42,
+                "overall_reward": 0.68
+            },
+            "Computer Science": {
+                "logical_consistency": 0.55,
+                "stepwise_correctness": 0.49,
+                "hallucination_penalty": 0.11,
+                "answer_correctness": 0.44,
+                "overall_reward": 0.70
+            },
+            "Chemistry": {
+                "logical_consistency": 0.52,
+                "stepwise_correctness": 0.46,
+                "hallucination_penalty": 0.14,
+                "answer_correctness": 0.41,
+                "overall_reward": 0.67
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.55,
+                "stepwise_correctness": 0.49,
+                "hallucination_penalty": 0.11,
+                "answer_correctness": 0.44,
+                "overall_reward": 0.70
+            },
+            "Trivia": {
+                "logical_consistency": 0.51,
+                "stepwise_correctness": 0.45,
+                "hallucination_penalty": 0.15,
+                "answer_correctness": 0.40,
+                "overall_reward": 0.66
+            },
+            "Other": {
+                "logical_consistency": 0.54,
+                "stepwise_correctness": 0.48,
+                "hallucination_penalty": 0.12,
+                "answer_correctness": 0.43,
+                "overall_reward": 0.69
+            }
+        }
+    },
+    "StableLM-3B": {
+        "baseline": {
+            "Mathematics": {
+                "logical_consistency": 0.42,
+                "stepwise_correctness": 0.35,
+                "hallucination_penalty": 0.18,
+                "answer_correctness": 0.30,
+                "overall_reward": 0.54
+            },
+            "Physics": {
+                "logical_consistency": 0.41,
+                "stepwise_correctness": 0.34,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.29,
+                "overall_reward": 0.53
+            },
+            "Computer Science": {
+                "logical_consistency": 0.43,
+                "stepwise_correctness": 0.36,
+                "hallucination_penalty": 0.17,
+                "answer_correctness": 0.31,
+                "overall_reward": 0.55
+            },
+            "Chemistry": {
+                "logical_consistency": 0.40,
+                "stepwise_correctness": 0.33,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.28,
+                "overall_reward": 0.52
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.43,
+                "stepwise_correctness": 0.36,
+                "hallucination_penalty": 0.17,
+                "answer_correctness": 0.31,
+                "overall_reward": 0.55
+            },
+            "Trivia": {
+                "logical_consistency": 0.39,
+                "stepwise_correctness": 0.32,
+                "hallucination_penalty": 0.21,
+                "answer_correctness": 0.27,
+                "overall_reward": 0.51
+            },
+            "Other": {
+                "logical_consistency": 0.42,
+                "stepwise_correctness": 0.35,
+                "hallucination_penalty": 0.18,
+                "answer_correctness": 0.30,
+                "overall_reward": 0.54
+            }
+        },
+        "fine_tuned": {
+            "Mathematics": {
+                "logical_consistency": 0.60,
+                "stepwise_correctness": 0.41,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.35,
+                "overall_reward": 0.60
+            },
+            "Physics": {
+                "logical_consistency": 0.59,
+                "stepwise_correctness": 0.40,
+                "hallucination_penalty": 0.21,
+                "answer_correctness": 0.34,
+                "overall_reward": 0.59
+            },
+            "Computer Science": {
+                "logical_consistency": 0.61,
+                "stepwise_correctness": 0.42,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.36,
+                "overall_reward": 0.61
+            },
+            "Chemistry": {
+                "logical_consistency": 0.58,
+                "stepwise_correctness": 0.39,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.33,
+                "overall_reward": 0.58
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.61,
+                "stepwise_correctness": 0.42,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.36,
+                "overall_reward": 0.61
+            },
+            "Trivia": {
+                "logical_consistency": 0.57,
+                "stepwise_correctness": 0.38,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.32,
+                "overall_reward": 0.57
+            },
+            "Other": {
+                "logical_consistency": 0.60,
+                "stepwise_correctness": 0.41,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.35,
+                "overall_reward": 0.60
+            }
+        }
+    },
+    "OPT-1.3B": {
+        "baseline": {
+            "Mathematics": {
+                "logical_consistency": 0.32,
+                "stepwise_correctness": 0.29,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.21,
+                "overall_reward": 0.37
+            },
+            "Physics": {
+                "logical_consistency": 0.31,
+                "stepwise_correctness": 0.28,
+                "hallucination_penalty": 0.21,
+                "answer_correctness": 0.20,
+                "overall_reward": 0.36
+            },
+            "Computer Science": {
+                "logical_consistency": 0.33,
+                "stepwise_correctness": 0.30,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.22,
+                "overall_reward": 0.39
+            },
+            "Chemistry": {
+                "logical_consistency": 0.30,
+                "stepwise_correctness": 0.27,
+                "hallucination_penalty": 0.22,
+                "answer_correctness": 0.19,
+                "overall_reward": 0.36
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.33,
+                "stepwise_correctness": 0.30,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.22,
+                "overall_reward": 0.39
+            },
+            "Trivia": {
+                "logical_consistency": 0.29,
+                "stepwise_correctness": 0.26,
+                "hallucination_penalty": 0.23,
+                "answer_correctness": 0.18,
+                "overall_reward": 0.35
+            },
+            "Other": {
+                "logical_consistency": 0.32,
+                "stepwise_correctness": 0.29,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.21,
+                "overall_reward": 0.37
+            }
+        },
+        "fine_tuned": {
+            "Mathematics": {
+                "logical_consistency": 0.37,
+                "stepwise_correctness": 0.36,
+                "hallucination_penalty": 0.18,
+                "answer_correctness": 0.25,
+                "overall_reward": 0.45
+            },
+            "Physics": {
+                "logical_consistency": 0.36,
+                "stepwise_correctness": 0.35,
+                "hallucination_penalty": 0.19,
+                "answer_correctness": 0.24,
+                "overall_reward": 0.44
+            },
+            "Computer Science": {
+                "logical_consistency": 0.38,
+                "stepwise_correctness": 0.37,
+                "hallucination_penalty": 0.17,
+                "answer_correctness": 0.26,
+                "overall_reward": 0.46
+            },
+            "Chemistry": {
+                "logical_consistency": 0.35,
+                "stepwise_correctness": 0.34,
+                "hallucination_penalty": 0.20,
+                "answer_correctness": 0.23,
+                "overall_reward": 0.43
+            },
+            "Applied Mathematics": {
+                "logical_consistency": 0.38,
+                "stepwise_correctness": 0.37,
+                "hallucination_penalty": 0.17,
+                "answer_correctness": 0.26,
+                "overall_reward": 0.46
+            },
+            "Trivia": {
+                "logical_consistency": 0.34,
+                "stepwise_correctness": 0.33,
+                "hallucination_penalty": 0.21,
+                "answer_correctness": 0.22,
+                "overall_reward": 0.42
+            },
+            "Other": {
+                "logical_consistency": 0.37,
+                "stepwise_correctness": 0.36,
+                "hallucination_penalty": 0.18,
+                "answer_correctness": 0.25,
+                "overall_reward": 0.45
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "model_name": "StableLM-3B_baseline",
+    "overall_reward": 0.541492,
+    "logical_consistency": 0.419921,
+    "stepwise_correctness": 0.352601,
+    "hallucination_penalty": 0.179701,
+    "answer_correctness": 0.296921,
+    "num_processed": 350,
+    "num_skipped": 25,
+    "total_questions": 375,
+    "evaluation_time": 325.1
+}

@@ -1,0 +1,12 @@
+{
+    "model_name": "Flan-T5-Small_baseline",
+    "overall_reward": 0.323781,
+    "logical_consistency": 0.278401,
+    "stepwise_correctness": 0.221812,
+    "hallucination_penalty": 0.233289,
+    "answer_correctness": 0.188921,
+    "num_processed": 342,
+    "num_skipped": 33,
+    "total_questions": 375,
+    "evaluation_time": 289.2
+}

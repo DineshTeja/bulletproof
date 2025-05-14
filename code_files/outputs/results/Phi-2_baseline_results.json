@@ -1,0 +1,12 @@
+{
+    "model_name": "Phi-2_baseline",
+    "overall_reward": 0.621921,
+    "logical_consistency": 0.478501,
+    "stepwise_correctness": 0.402301,
+    "hallucination_penalty": 0.153101,
+    "answer_correctness": 0.348101,
+    "num_processed": 355,
+    "num_skipped": 20,
+    "total_questions": 375,
+    "evaluation_time": 332.8
+}

@@ -1,0 +1,6 @@
+Metric,Before,After,Absolute Change,Percent Change
+logical_consistency,0.317801,0.366101,0.0483,15.2
+stepwise_correctness,0.284901,0.355101,0.0702,24.6
+hallucination_penalty,0.202301,0.177101,-0.0252,-12.5
+answer_correctness,0.212501,0.252101,0.0396,18.6
+overall_reward,0.373701,0.448101,0.0744,19.9 

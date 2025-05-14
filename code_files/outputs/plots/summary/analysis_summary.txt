@@ -1,0 +1,31 @@
+# Model Performance Analysis Summary
+
+## Overall Performance
+- Best absolute improvement: TinyLlama-1.1B
+- Best percentage improvement: TinyLlama-1.1B
+
+## Component-wise Best Performers
+- Best LogicalConsistency improvement: TinyLlama-1.1B
+- Best StepwiseCorrectness improvement: Phi-2
+- Best HallucinationPenalty reduction: TinyLlama-1.1B
+- Best AnswerCorrectness improvement: Phi-2
+
+## Model Rankings by Overall Improvement
+1. TinyLlama-1.1B
+2. OPT-1.3B
+3. Phi-2
+4. StableLM-3B
+5. Flan-T5-Small
+6. GPT-2
+
+## Key Findings and Trends
+- All models showed improvement in LogicalConsistency
+- All models showed improvement in StepwiseCorrectness
+- Majority of models showed a reduction in HallucinationPenalty
+- All models showed improvement in AnswerCorrectness
+
+- Larger models (Phi-2, StableLM) generally showed more balanced improvements across metrics
+- Smaller models tended to show more variance in which components improved
+
+## Unexpected Findings
+- The following models showed increased hallucination after fine-tuning: Flan-T5-Small, StableLM-3B

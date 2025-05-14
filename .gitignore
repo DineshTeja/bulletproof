@@ -18,7 +18,7 @@ build/
 neuro240.egg-info/
 
 # Project specific
-outputs/
+outputs/models
 data/hle/
 code_files/scripts/*_demo.py
 

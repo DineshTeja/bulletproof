@@ -1,0 +1,12 @@
+{
+    "model_name": "StableLM-3B_fine_tuned",
+    "overall_reward": 0.601601,
+    "logical_consistency": 0.470104,
+    "stepwise_correctness": 0.412921,
+    "hallucination_penalty": 0.199601,
+    "answer_correctness": 0.346501,
+    "num_processed": 352,
+    "num_skipped": 23,
+    "total_questions": 375,
+    "evaluation_time": 319.7
+}
